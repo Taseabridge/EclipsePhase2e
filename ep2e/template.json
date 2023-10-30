@@ -1,6 +1,60 @@
 {
     "Actor": {
-      "types": ["character"]
+      "types": ["character"],
+      "templates": {
+        "common": {
+          "abilities":{
+            "cognition": {
+              "value": 10,
+              "max": null,
+              "bonuses": {
+                "check": "",
+                "save": ""
+              }
+            },
+            "intuition": {
+              "value": 10,
+              "max": null,
+              "bonuses": {
+                "check": "",
+                "save": ""
+              }
+            },
+            "reflexes": {
+              "value": 10,
+              "max": null,
+              "bonuses": {
+                "check": "",
+                "save": ""
+              }
+            },
+            "savvy": {
+              "value": 10,
+              "max": null,
+              "bonuses": {
+                "check": "",
+                "save": ""
+              }
+            },
+            "somatics": {
+              "value": 10,
+              "max": null,
+              "bonuses": {
+                "check": "",
+                "save": ""
+              }
+            },
+            "willpower": {
+              "value": 10,
+              "max": null,
+              "bonuses": {
+                "check": "",
+                "save": ""
+              }
+            }
+          }
+        }
+      }
     },
     "Item": {
       "types": ["gear","skillActive","skillKnow"],
