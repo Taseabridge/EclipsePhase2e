@@ -21,10 +21,7 @@
     "styles": [
       "styles/ep2e.css"
     ],
-    "packs": [
-    ],
-  
-    
+ 
     "socket": false,
     "initiative": "1d6",
     "gridDistance": 1,
