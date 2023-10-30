@@ -23,12 +23,8 @@
     ],
     "packs": [
     ],
-    "documentTypes": {
-      "Actor":{
-        "character": {},
-        "weaponEmplacement": {}
-      }
-    },
+  
+    
     "socket": false,
     "initiative": "1d6",
     "gridDistance": 1,
