@@ -22,6 +22,15 @@
       "styles/ep2e.css"
     ],
     "packs": [
+      {
+        "name": "Mooks",
+        "label": "Mooks",
+        "system": "ep2e",
+        "path": "packs/mooks.db",
+        "type": "actor",
+        "private": false,
+        "flags": {}
+      }
     ],
     "documentTypes": {
       "Actor":{
@@ -35,8 +44,8 @@
     "gridUnits": "m",
     "primaryTokenAttribute": "resources.health",
     "secondaryTokenAttribute": "resources.power",
-    "url": "https://your/hosted/system/repo/",
+    "url": "https://github.com/Taseabridge/EclipsePhase2e",
     "background": "systems/mysystem/assets/splash.webp",
-    "manifest": "https://your/hosted/system/repo/system.json",
+    "manifest": "https://raw.githubusercontent.com/Taseabridge/EclipsePhase2e/main/ep2e/system.json",
     "download": "https://your/packaged/download/archive.zip"
   }
