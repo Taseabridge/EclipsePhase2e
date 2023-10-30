@@ -3,7 +3,7 @@
       "types": ["character"],
       "templates": {
         "common": {
-          "abilities":{
+          "aptitudes":{
             "cognition": {
               "value": 10,
               "max": null,
