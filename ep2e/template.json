@@ -3,6 +3,11 @@
       "types": ["character"]
     },
     "Item": {
-      "types": []
+      "types": ["gear","skillActive","skillKnow"],
+      "templates":{
+        "skill":{
+          "name": ""
+        }
+      }
     }
 }
