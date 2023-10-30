@@ -2,6 +2,7 @@
     "id": "ep2e",
     "title": "Eclipse Phase 2nd Edition",
     "description": "A system for playing the Second Edition of Eclipse Phase in the Foundry Virtual Tabletop environment.",
+    "system": "ep2e",
     "version": "0.0.1",
     "compatibility": {
       "minimum": "11",
@@ -21,17 +22,7 @@
     "styles": [
       "styles/ep2e.css"
     ],
-    "packs": [
-      {
-        "name": "Mooks",
-        "label": "Mooks",
-        "system": "ep2e",
-        "path": "packs/mooks.db",
-        "type": "actor",
-        "private": false,
-        "flags": {}
-      }
-    ],
+    "packs": [],
     "documentTypes": {
       "Actor":{
         "character": {},
