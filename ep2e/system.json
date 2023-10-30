@@ -1,0 +1,43 @@
+{
+    "id": "ep2e",
+    "title": "Eclipse Phase 2nd Edition",
+    "description": "Eclipse Phase 2nd Edition",
+    "version": "0.0.1",
+    "compatibility": {
+      "minimum": "11",
+      "verified": "11",
+      "maximum": "11"
+    },
+    "authors": [
+      {
+        "name": "us",
+        "url": "https://github.com/Taseabridge/EclipsePhase2e",
+        "email": "dont@email.me",
+        "discord": "dontAsk"
+      }
+    ],
+    "esmodules": [
+      "scripts/ep2e.mjs"
+    ],
+    "styles": [
+      "styles/ep2e.css"
+    ],
+    "packs": [
+    ],
+    "documentTypes": {
+      "Actor":{
+        "character": {},
+        "weaponEmplacement": {}
+      }
+    },
+    "socket": false,
+    "initiative": "1d20",
+    "gridDistance": 1,
+    "gridUnits": "m",
+    "primaryTokenAttribute": "resources.health",
+    "secondaryTokenAttribute": "resources.power",
+    "url": "https://your/hosted/system/repo/",
+    "background": "systems/mysystem/assets/splash.webp",
+    "manifest": "https://your/hosted/system/repo/system.json",
+    "download": "https://your/packaged/download/archive.zip"
+  }
