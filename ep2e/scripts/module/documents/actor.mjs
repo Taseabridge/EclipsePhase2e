@@ -32,9 +32,9 @@ export default class ActorEp2e extends Actor {
      * @param {Morph} morph Morph to be sleeved.
      */
 
-    /*    set morphSleeved(morph) {
-            this.morphSleeved = morph;
-        }
-    */
+    set morphSleeved(morph) {
+        this.morphSleeved = morph;
+    }
+
 
 }
