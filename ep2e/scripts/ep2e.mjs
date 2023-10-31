@@ -1,4 +1,5 @@
 import ActorEp2e from "./module/documents/actor.mjs";
+import ItemEp2e from "./module/documents/item.mjs";
 
 var start_time = performance.now();
 const SYSTEM_NAME = "ep2e";
@@ -207,6 +208,7 @@ class Tablerules {
 Hooks.once("init", () => {
 
     CONFIG.Actor.documentClass = ActorEp2e;
+    CONFIG.Item.documentClass = ItemEp2e;
 
     TRUtils.registerSettings();
 

@@ -85,15 +85,15 @@
           
     "character":{
       "templates": ["common", "modifiers"]
-    },
-    "Item": {
-      "types": ["gear","skillActive","skillKnow"],
-      "templates":{
-        "skill":{
-          "name": ""
-        }
-        
+    }
+  },
+  "Item": {
+    "types": ["gear","skillActive","skillKnow"],
+    "templates":{
+      "skill":{
+        "name": ""
       }
+      
     }
   }
 }
