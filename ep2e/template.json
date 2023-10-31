@@ -56,12 +56,16 @@
         }
       }
     },
+    "character":{
+      "templates": ["common"]
+    },
     "Item": {
       "types": ["gear","skillActive","skillKnow"],
       "templates":{
         "skill":{
           "name": ""
         }
+        
       }
     }
 }
