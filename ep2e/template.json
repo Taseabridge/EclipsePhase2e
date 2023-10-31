@@ -48,40 +48,43 @@
             }
           },
         "derivedStats":{
-            "Initiative":{
+            "initiative":{
               "ability": "",
               "bonus": ""
             },
-            "Wound Threshold": {
+            "woundThreshold": {
               "ability": "",
               "value": ""
             },
-            "Durability": {
+            "durability": {
               "value": ""
             },
-            "Death Rating":{
+            "deathRating":{
               "ability": "",
               "bonus": "",
               "value": ""
             },
-            "Lucidity": {
+            "lucidity": {
               "ability": "",
               "value": ""
             },
-            "Trauma Threshold": {
+            "traumaThreshold": {
               "ability": "",
               "value": ""
             },
-            "Insanity Rating": {
+            "insanityRating": {
               "ability": "",
               "value": ""
               }
            } 
-        } 
+        },
+        "modifiers":{
+
+        }
       }, 
           
     "character":{
-      "templates": ["common"]
+      "templates": ["common", "modifiers"]
     },
     "Item": {
       "types": ["gear","skillActive","skillKnow"],

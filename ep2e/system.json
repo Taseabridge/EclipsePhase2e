@@ -23,12 +23,6 @@
       "styles/ep2e.css"
     ],
     "packs": [],
-    "documentTypes": {
-      "Actor":{
-        "character": {},
-        "weaponEmplacement": {}
-      }
-    },
     "socket": false,
     "initiative": "1d6",
     "gridDistance": 1,
@@ -36,7 +30,6 @@
     "primaryTokenAttribute": "resources.health",
     "secondaryTokenAttribute": "resources.power",
     "url": "https://github.com/Taseabridge/EclipsePhase2e",
-    "background": "systems/mysystem/assets/splash.webp",
     "manifest": "https://raw.githubusercontent.com/Taseabridge/EclipsePhase2e/main/ep2e/system.json",
     "download": "https://your/packaged/download/archive.zip"
   }
