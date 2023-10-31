@@ -7,6 +7,10 @@ console.log(`${SYSTEM_NAME} loading`);
 
 class TRUtils {
 
+    /**
+    * 
+    * @returns {boolean} true if debugging is enabled, false otherwise.
+    */
     static isDebugEnabled() {
         return (game.settings.get(SYSTEM_NAME, "logLevel") >= 3);
     }

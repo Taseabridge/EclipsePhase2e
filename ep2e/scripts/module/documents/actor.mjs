@@ -1,9 +1,16 @@
+// @ts-check
+
+/**
+ * 
+ * 
+ */
+// @ts-ignore
 export default class ActorEp2e extends Actor {
 
     constructor(options = {}) {
         super(options);
 
-        this.morphSleeved = null;
+        //this.morphSleeved = null;
     }
 
     get armor() {
@@ -11,25 +18,25 @@ export default class ActorEp2e extends Actor {
     }
 
     /**
-     * returns {object} Ego.
+     * @returns {object} Ego.
      */
     get ego() {
-
+        return this.ego;
     }
 
     /**
-     * returns {object} Array of Morph, empty Array if not having any.
+     * @returns {object} Array of Morph, empty Array if not having any.
      */
     get morphs() {
-
+        return this.morphs;
     }
 
     get movement() {
-
+        return this.movement;
     }
 
     /**
-     * @param {Morph} morph Morph to be sleeved.
+     * @param {object} morph Morph to be sleeved.
      */
 
     set morphSleeved(morph) {
