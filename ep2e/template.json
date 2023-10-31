@@ -89,11 +89,12 @@
   },
   "Item": {
     "types": ["gear","skillActive","skillKnow"],
+    "htmlFields": ["description"],
     "templates":{
       "skill":{
         "name": ""
-      }
-      
-    }
+      }      
+    },
+    "gear": {}
   }
 }
