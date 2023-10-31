@@ -8,54 +8,78 @@
               "value": 10,
               "max": null,
               "bonuses": {
-                "check": "",
-                "save": ""
+                "check": ""
               }
             },
             "intuition": {
               "value": 10,
               "max": null,
               "bonuses": {
-                "check": "",
-                "save": ""
+                "check": ""
               }
             },
             "reflexes": {
               "value": 10,
               "max": null,
               "bonuses": {
-                "check": "",
-                "save": ""
+                "check": ""
               }
             },
             "savvy": {
               "value": 10,
               "max": null,
               "bonuses": {
-                "check": "",
-                "save": ""
+                "check": ""
               }
             },
             "somatics": {
               "value": 10,
               "max": null,
               "bonuses": {
-                "check": "",
-                "save": ""
+                "check": ""
               }
             },
             "willpower": {
               "value": 10,
               "max": null,
               "bonuses": {
-                "check": "",
-                "save": ""
+                "check": ""
               }
             }
-          }
-        }
-      }
-    },
+          },
+        "derivedStats":{
+            "Initiative":{
+              "ability": "",
+              "bonus": ""
+            },
+            "Wound Threshold": {
+              "ability": "",
+              "value": ""
+            },
+            "Durability": {
+              "value": ""
+            },
+            "Death Rating":{
+              "ability": "",
+              "bonus": "",
+              "value": ""
+            },
+            "Lucidity": {
+              "ability": "",
+              "value": ""
+            },
+            "Trauma Threshold": {
+              "ability": "",
+              "value": ""
+            },
+            "Insanity Rating": {
+              "ability": "",
+              "value": ""
+              }
+           } 
+        } 
+      }, 
+          
     "character":{
       "templates": ["common"]
     },
