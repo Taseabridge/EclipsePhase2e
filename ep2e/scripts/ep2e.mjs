@@ -1,3 +1,5 @@
+import ActorEp2e from "./module/documents/actor.mjs";
+
 var start_time = performance.now();
 const SYSTEM_NAME = "ep2e";
 console.log(`${SYSTEM_NAME} loading`);
@@ -202,7 +204,10 @@ class Tablerules {
 }
 
 
-Hooks.on("init", () => {
+Hooks.once("init", () => {
+
+    CONFIG.Actor.documentClass = ActorEp2e;
+
     TRUtils.registerSettings();
 
 });
