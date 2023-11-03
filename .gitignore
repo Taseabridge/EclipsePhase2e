@@ -9,5 +9,8 @@
 # Node Modules
 node_modules/
 
+# TypeScript
+dist/
+
 # TSDoc
 docs/
