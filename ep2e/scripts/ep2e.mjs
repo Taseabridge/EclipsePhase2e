@@ -1,5 +1,8 @@
-import ActorEp2e from "./module/documents/actor.mjs";
-import ItemEp2e, { GearData } from "./module/documents/item.mjs";
+import ActorEp2e from "./module/documents/ActorEp2e.mjs";
+import EgoData from "./module/documents/EgoData.mjs";
+import GearData from "./module/documents/GearData.mjs";
+import ItemEp2e from "./module/documents/ItemEp2e.mjs";
+import MorphData from "./module/documents/MorphData.mjs";
 
 var start_time = performance.now();
 const SYSTEM_NAME = "ep2e";
@@ -214,7 +217,9 @@ Hooks.once("init", () => {
     CONFIG.Actor.documentClass = ActorEp2e;
 
     CONFIG.Item.documentClass = ItemEp2e;
-    CONFIG.Item.systemDataModels.gear = GearData;
+    CONFIG.Item.dataModels.gear = GearData;
+    CONFIG.Item.dataModels.morph = MorphData;
+    CONFIG.Item.dataModels.ego = EgoData;
 
     TRUtils.registerSettings();
 

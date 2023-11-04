@@ -88,7 +88,7 @@
     }
   },
   "Item": {
-    "types": ["gear","skillActive","skillKnow"],
+    "types": ["ego","gear","morph"],
     "htmlFields": ["description"],
     "templates":{
       "skill":{
