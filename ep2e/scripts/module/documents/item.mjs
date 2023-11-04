@@ -20,7 +20,7 @@ export class WeaponData extends foundry.abstract.DataModel {
  * It might be possible, and if so reasonable, to have a hierarchy of these instead in order to compose from them without keeping the parts distinct, and with no need to repeat parts.
  * 
  */
-export class GearData extends foundry.abstract.DataModel {
+export class ItemData extends foundry.abstract.DataModel {
 
     static defineSchema() {
         const fields = foundry.data.fields;
@@ -29,3 +29,20 @@ export class GearData extends foundry.abstract.DataModel {
         }
     }
 }
+
+export class GearData extends ItemData {
+
+    static defineSchema() {
+        const fields = foundry.data.fields;
+
+        composite = super.defineSchema(arguments);
+
+        composite.gp = new fields.NumberField({
+            required: true,
+            initial: 0,
+            integer: true
+        });
+
+        return composite;
+    }
+} 
