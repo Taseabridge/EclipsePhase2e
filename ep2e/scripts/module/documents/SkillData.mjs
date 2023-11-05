@@ -5,21 +5,24 @@ export default class SkillData extends ItemData {
 
         const skill = super.defineSchema(arguments);
 
-        skill.aptitude = new foundry.data.fields.StringField({
-            required: true,
-            initial: ""
-        });
+        skill.skill = new foundry.data.fields.SchemaField({
 
-        skill.rank = new foundry.data.fields.NumberField({
-            required: true,
-            initial: 0,
-            integer: true
-        });
+            aptitude: new foundry.data.fields.StringField({
+                required: true,
+                initial: ""
+            }),
 
-        skill.types = new foundry.data.fields.ArrayField(
-            new foundry.data.fields.StringField({
-            })
-        );
+            rank: new foundry.data.fields.NumberField({
+                required: true,
+                initial: 0,
+                integer: true
+            }),
+
+            types: new foundry.data.fields.ArrayField(
+                new foundry.data.fields.StringField({
+                })
+            )
+        });
 
         return skill;
     }
