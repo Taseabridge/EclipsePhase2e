@@ -12,10 +12,26 @@ export default class ActorSheetEp2e extends ActorSheet {
     /** @override */
     async getData(options) {
 
-        // The Actor's data
-        const actor = this.actor.toObject();
-        console.log({ message: 'getData', source: source });
+        const context = super.getData(options);
 
+        /*
+        context.actor = this.actor;
+        context.source = this.actor.toObject().system;
+        context.items = Array.from(this.actor.items);
+        context.itemContext = {};
+
+        context.expandedData = {};
+        for (const id of this._expanded) {
+            const item = this.actor.items.get(id);
+            if (item) context.expandedData[id] = await item.getChatData({ secrets: this.actor.isOwner });
+        }
+        */
+
+        // do ep2e stuff
+
+
+
+        return context;
     }
 
     activateListeners(html) {
@@ -39,11 +55,12 @@ export default class ActorSheetEp2e extends ActorSheet {
       * @private
       */
     async _onItemDelete(event) {
+
         event.preventDefault();
+        //console.log({ message: `ActorSheetEp2e._onItemDelete`, event: event });
         const li = event.currentTarget.closest(".item");
         const item = this.actor.items.get(li.dataset.itemId);
         if (!item) return;
-
 
         return item.deleteDialog();
     }
