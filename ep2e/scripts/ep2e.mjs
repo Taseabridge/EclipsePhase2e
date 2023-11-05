@@ -3,6 +3,7 @@ import EgoData from "./module/documents/EgoData.mjs";
 import GearData from "./module/documents/GearData.mjs";
 import ItemEp2e from "./module/documents/ItemEp2e.mjs";
 import MorphData from "./module/documents/MorphData.mjs";
+import SkillData from "./module/documents/SkillData.mjs";
 
 var start_time = performance.now();
 const SYSTEM_NAME = "ep2e";
@@ -220,6 +221,7 @@ Hooks.once("init", () => {
     CONFIG.Item.dataModels.gear = GearData;
     CONFIG.Item.dataModels.morph = MorphData;
     CONFIG.Item.dataModels.ego = EgoData;
+    CONFIG.Item.dataModels.skill = SkillData;
 
     TRUtils.registerSettings();
 

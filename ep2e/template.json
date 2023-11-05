@@ -88,7 +88,7 @@
     }
   },
   "Item": {
-    "types": ["ego","gear","morph"],
+    "types": ["ego","gear","morph","skill"],
     "htmlFields": ["description"],
     "templates":{
       "skill":{
