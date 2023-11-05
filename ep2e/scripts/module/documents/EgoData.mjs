@@ -38,9 +38,10 @@ export default class EgoData extends ItemData {
             })
         });
 
-        ego.skills = new foundry.data.fields.EmbeddedCollectionField({
-            // SkillData extends foundry.abstract.DataModel
-        });
+        ego.skills = new foundry.data.fields.ArrayField(
+            new foundry.data.fields.StringField({
+            })
+        );
 
         return ego;
     }

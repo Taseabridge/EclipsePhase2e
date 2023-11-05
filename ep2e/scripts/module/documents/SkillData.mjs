@@ -18,7 +18,6 @@ export default class SkillData extends ItemData {
 
         skill.types = new foundry.data.fields.ArrayField(
             new foundry.data.fields.StringField({
-                initial: ""
             })
         );
 
