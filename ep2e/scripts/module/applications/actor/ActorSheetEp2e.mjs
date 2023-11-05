@@ -14,7 +14,7 @@ export default class ActorSheetEp2e extends ActorSheet {
 
         // The Actor's data
         const source = this.actor.toObject();
-
+        console.log({ message: 'getData', source: source });
 
     }
 
