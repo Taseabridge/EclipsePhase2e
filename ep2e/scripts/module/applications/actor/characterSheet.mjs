@@ -1,4 +1,4 @@
-MyActorSheet extends ActorSheet {
+ActorSheetEp2E extends ActorSheet {
 
     activateListers(html) {
         html.on("click", ".myButtonClass", { actor: this.actor }, this.myRollFunction);
