@@ -1,3 +1,4 @@
+import ActorSheetEp2e from "./module/applications/actor/ActorSheetEp2e.mjs";
 import ActorEp2e from "./module/documents/ActorEp2e.mjs";
 import EgoData from "./module/documents/EgoData.mjs";
 import GearData from "./module/documents/GearData.mjs";
@@ -215,6 +216,8 @@ class Tablerules {
 
 Hooks.once("init", () => {
 
+    TRUtils.registerSettings();
+
     CONFIG.Actor.documentClass = ActorEp2e;
 
     CONFIG.Item.documentClass = ItemEp2e;
@@ -223,8 +226,11 @@ Hooks.once("init", () => {
     CONFIG.Item.dataModels.ego = EgoData;
     CONFIG.Item.dataModels.skill = SkillData;
 
-    TRUtils.registerSettings();
-
+    Actors.registerSheet("ep2e", ActorSheetEp2e, {
+        types: ["character"],
+        makeDefault: true,
+        label: "Ep2e Character Sheet"
+    });
 });
 
 Hooks.on("preCreateChatMessage", (messageDoc, rawMessageData, context, userId) => {
