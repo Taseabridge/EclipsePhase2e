@@ -6,7 +6,7 @@
     "version": "0.0.1",
     "compatibility": {
       "minimum": "11",
-      "verified": "11.313"
+      "verified": "11.314"
     },
     "authors": [
       {
@@ -22,7 +22,28 @@
     "styles": [
       "styles/ep2e.css"
     ],
-    "packs": [],
+    "packs": [
+      {
+        "name": "ep2e-skills",
+        "label": "Skills",
+        "path": "packs/skills",
+        "type": "Item",
+        "system": "ep2e",
+        "flags": {}
+      }
+    ],
+    "packFolders":[
+      {
+        "name": "Eclipse Phase 2e",
+        "sorting": "a",
+        "color": "#ff0000",
+        "packs": [
+          "ep2e-skills"
+        ],
+        "folders": [
+        ]
+      }
+    ],
     "socket": false,
     "initiative": "1d6",
     "gridDistance": 1,
