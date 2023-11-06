@@ -10,7 +10,6 @@ export default class ActorEp2e extends Actor {
     constructor(options = {}) {
         super(options);
 
-        //this.morphSleeved = null;
     }
 
     /**

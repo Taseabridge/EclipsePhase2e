@@ -1,5 +1,6 @@
 import ActorSheetEp2e from "./module/applications/actor/ActorSheetEp2e.mjs";
 import ActorEp2e from "./module/documents/ActorEp2e.mjs";
+import CharacterData from "./module/documents/CharacterData.mjs";
 import EgoData from "./module/documents/EgoData.mjs";
 import GearData from "./module/documents/GearData.mjs";
 import ItemEp2e from "./module/documents/ItemEp2e.mjs";
@@ -219,6 +220,7 @@ Hooks.once("init", () => {
     TRUtils.registerSettings();
 
     CONFIG.Actor.documentClass = ActorEp2e;
+    CONFIG.Actor.dataModels.character = CharacterData
 
     CONFIG.Item.documentClass = ItemEp2e;
     CONFIG.Item.dataModels.gear = GearData;
