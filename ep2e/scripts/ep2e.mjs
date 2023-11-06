@@ -6,6 +6,7 @@ import GearData from "./module/documents/GearData.mjs";
 import ItemEp2e from "./module/documents/ItemEp2e.mjs";
 import MorphData from "./module/documents/MorphData.mjs";
 import SkillData from "./module/documents/SkillData.mjs";
+import WareData from "./module/documents/WareData.mjs";
 
 var start_time = performance.now();
 const SYSTEM_NAME = "ep2e";
@@ -227,11 +228,12 @@ Hooks.once("init", () => {
     CONFIG.Item.dataModels.morph = MorphData;
     CONFIG.Item.dataModels.ego = EgoData;
     CONFIG.Item.dataModels.skill = SkillData;
+    CONFIG.Item.dataModels.ware = WareData;
 
-    Actors.registerSheet("ep2e", ActorSheetEp2e, {
+    Actors.registerSheet(SYSTEM_NAME, ActorSheetEp2e, {
         types: ["character"],
         makeDefault: true,
-        label: "Ep2e Character Sheet"
+        label: "ep2e Character Sheet"
     });
 });
 

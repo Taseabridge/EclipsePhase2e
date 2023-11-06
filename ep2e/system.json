@@ -24,6 +24,22 @@
     ],
     "packs": [
       {
+        "name": "ep2e-actors",
+        "label": "Actors",
+        "path": "packs/actors",
+        "type": "Actor",
+        "system": "ep2e",
+        "flags": {}
+      },
+      {
+        "name": "ep2e-gear",
+        "label": "Gear",
+        "path": "packs/gear",
+        "type": "Item",
+        "system": "ep2e",
+        "flags": {}
+      },
+      {
         "name": "ep2e-skills",
         "label": "Skills",
         "path": "packs/skills",
@@ -38,7 +54,9 @@
         "sorting": "a",
         "color": "#ff0000",
         "packs": [
-          "ep2e-skills"
+          "ep2e-actors",
+          "ep2e-skills",
+          "ep2e-gear"
         ],
         "folders": [
         ]
