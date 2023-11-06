@@ -7,11 +7,6 @@
 // @ts-ignore
 export default class ActorEp2e extends Actor {
 
-    constructor(options = {}) {
-        super(options);
-
-    }
-
     /**
      * 
      * @returns {object} the armor.

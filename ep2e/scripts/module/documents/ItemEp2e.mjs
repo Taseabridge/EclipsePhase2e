@@ -5,10 +5,6 @@
  */
 export default class ItemEp2e extends Item {
 
-    constructor(options = {}) {
-        super(options);
-    }
-
     /**
      * Create a ChatMessage with the item's description (its description and maybe some state or configuration data).
      * 
