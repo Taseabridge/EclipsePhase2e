@@ -28,6 +28,20 @@ export default class ItemData extends foundry.abstract.DataModel {
             })
         );
 
+        /**
+         * If use is a check, what skill to use.
+         */
+        item.skill = new foundry.data.fields.StringField({
+            default: null
+        });
+
+        /**
+         * If use is a check, what aptitude to fall back to if no skill specified.
+         */
+        item.aptitude = new foundry.data.fields.StringField({
+            default: null
+        });
+
 
         /**
          * to put the Item into any Graph

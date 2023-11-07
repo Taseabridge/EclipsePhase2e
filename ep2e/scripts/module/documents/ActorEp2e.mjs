@@ -1,55 +1,16 @@
-// @ts-check
-
-/**
- * 
- * 
- */
-// @ts-ignore
 export default class ActorEp2e extends Actor {
 
-    constructor(options = {}) {
-        super(options);
-
-        //this.morphSleeved = null;
-    }
-
     /**
      * 
-     * @returns {object} the armor.
+     * @todo Remove log, or if fine grained logging control has been implemented change it for the appropriate tracing or debugging solution.
+     * @inheritdoc
      */
-    get armor() {
-        return { e: 0, k: 0, items: [] };
-    }
+    prepareDerivedData() {
+        console.log({ message: `ActorEp2e.prepareDerivedData()`, context: this, arguments: arguments });
 
-    /**
-     * 
-     * @returns {object} Ego.
-     */
-    get ego() {
-        return this.ego;
-    }
+        // prepare derived data
+        // process the items
+        // lots of stuf, this is arguably one of the most important places to work on, besides further vertical exploration in order to discover stuff we need.
 
-    /**
-     * 
-     * @returns {Array} Array of Morph, empty Array if not having any.
-     */
-    get morphs() {
-        return this.morphs;
-    }
-
-    /**
-     * 
-     * @returns {Array} Array of Movements, empty Array if there are none.
-     */
-    get movement() {
-        return this.movement;
-    }
-
-    /**
-     * 
-     * @param {object} morph Morph to be sleeved.
-     */
-    set morphSleeved(morph) {
-        //   this.morphSleeved = morph;
     }
 }
