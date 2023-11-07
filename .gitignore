@@ -6,6 +6,9 @@
 *.code-workspace
 *.iml
 
+# Foundry
+foundry/
+
 # Node Modules
 node_modules/
 
