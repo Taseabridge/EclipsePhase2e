@@ -1,5 +1,17 @@
 export default class ActorSheetEp2e extends ActorSheet {
 
+    static get defaultOptions() {
+        return foundry.utils.mergeObject(super.defaultOptions, {
+            classes: ["worldbuilding", "sheet", "actor"],
+            template: "systems/worldbuilding/templates/actor-sheet.html",
+            width: 600,
+            height: 600,
+            tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "description" }],
+            scrollY: [".biography", ".items", ".attributes"],
+            dragDrop: [{ dragSelector: ".item-list .item", dropSelector: null }]
+        });
+    }
+
     /** @override */
     get template() {
         return "systems/ep2e/templates/actor-sheet.html";
