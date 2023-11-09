@@ -10,7 +10,7 @@ export default class ItemEp2e extends Item {
      * 
      * @param {*} options 
      */
-    async displayCard(options = {}) {
+    async displayCard() { // maybe we want to do it as in dnd5e and be able to chain options, though then where do we merge how, options = {}
 
         let item = this;
 

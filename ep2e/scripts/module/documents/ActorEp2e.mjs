@@ -8,6 +8,11 @@ export default class ActorEp2e extends Actor {
     prepareDerivedData() {
         console.log({ message: `ActorEp2e.prepareDerivedData()`, context: this, arguments: arguments });
 
+        const actor = this;
+
+        // put current ego into the ego property
+        actor.system.ego.current = actor.items.get(actor.system.ego.currentId);
+
         // prepare derived data
         // process the items
         // lots of stuf, this is arguably one of the most important places to work on, besides further vertical exploration in order to discover stuff we need.

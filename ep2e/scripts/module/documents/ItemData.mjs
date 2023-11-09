@@ -14,6 +14,13 @@ export default class ItemData extends foundry.abstract.DataModel {
         item.name = new foundry.data.fields.StringField();
 
         /**
+         * Canonical name. The name can be changed for flavor. The cname is the unique eternal rules key. We use a cname for human readability and for stability (we could have used the uuid for the item in its system compendium, but this is easier to read and at least as robust). Note that there can and often will be multiple items with the same cname in the game, that being all the items of a rules item's type, such as all the Informorphs or all the Agents or all the TacNets. This should be well suited for GM Macros, like roll item X on the Actor for which they selected the Token.
+         * 
+         * @todo do we want to use qualified names that document the kind of an item or just the name? Is there a unique (or at least clear enough choice to pick one if not) path to each (as long es we only have inheritence and no composition in the data model that automatically gives the unique path)?
+         */
+        item.cname = new foundry.data.fields.StringField();
+
+        /**
          * This is meant to become the rich description with the HTML Editor included like in dnd5e items enabling all kinds of unforseen uses, too, as it is unstructured, though sanitized data with which we can get creative as users. Must therefore never be used for technical control.
          */
         item.description = new foundry.data.fields.HTMLField();

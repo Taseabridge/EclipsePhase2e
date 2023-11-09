@@ -38,8 +38,13 @@ export default class ActorData extends foundry.abstract.DataModel {
 
         /**
          * The Ego currently controlling the Actor. Normally the one Ego like for a player character most of the time. Occassionally used for replacing that Ego, like when puppeteering.
+         * 
+         * ego.current will be the reference to the Item type ego with that id on this Actor's items EmbeddedCollection.
          */
-        ego.current = new foundry.data.fields.StringField({});
+        ego.currentId = new foundry.data.fields.StringField({
+            required: true,
+            initial: ""
+        });
 
         actor.ego = new foundry.data.fields.SchemaField(ego);
 

@@ -6,7 +6,7 @@
     "version": "0.0.1",
     "compatibility": {
       "minimum": "11",
-      "verified": "11.314"
+      "verified": "11.315"
     },
     "authors": [
       {
@@ -40,9 +40,25 @@
         "flags": {}
       },
       {
+        "name": "ep2e-morphs",
+        "label": "Morphs",
+        "path": "packs/morphs",
+        "type": "Item",
+        "system": "ep2e",
+        "flags": {}
+      },
+      {
         "name": "ep2e-skills",
         "label": "Skills",
         "path": "packs/skills",
+        "type": "Item",
+        "system": "ep2e",
+        "flags": {}
+      },
+      {
+        "name": "ep2e-traits",
+        "label": "Traits",
+        "path": "packs/traits",
         "type": "Item",
         "system": "ep2e",
         "flags": {}
@@ -55,8 +71,10 @@
         "color": "#ff0000",
         "packs": [
           "ep2e-actors",
+          "ep2e-gear",
+          "ep2e-morphs",
           "ep2e-skills",
-          "ep2e-gear"
+          "ep2e-traits"
         ],
         "folders": [
         ]

@@ -3,6 +3,7 @@ import ActorEp2e from "./module/documents/ActorEp2e.mjs";
 import CharacterData from "./module/documents/CharacterData.mjs";
 import EgoData from "./module/documents/EgoData.mjs";
 import GearData from "./module/documents/GearData.mjs";
+import GenerationTemplateData from "./module/documents/GenerationTemplateData.mjs";
 import ItemEp2e from "./module/documents/ItemEp2e.mjs";
 import MorphData from "./module/documents/MorphData.mjs";
 import SkillData from "./module/documents/SkillData.mjs";
@@ -225,6 +226,7 @@ Hooks.once("init", () => {
 
     CONFIG.Item.documentClass = ItemEp2e;
     CONFIG.Item.dataModels.gear = GearData;
+    CONFIG.Item.dataModels.generationtemplate = GenerationTemplateData;
     CONFIG.Item.dataModels.morph = MorphData;
     CONFIG.Item.dataModels.ego = EgoData;
     CONFIG.Item.dataModels.skill = SkillData;
