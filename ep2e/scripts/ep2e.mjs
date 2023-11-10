@@ -3,7 +3,7 @@ import ActorEp2e from "./module/documents/ActorEp2e.mjs";
 import CharacterData from "./module/documents/CharacterData.mjs";
 import EgoData from "./module/documents/EgoData.mjs";
 import GearData from "./module/documents/GearData.mjs";
-import TemplateData from "./module/documents/GenerationTemplateData.mjs";
+import TemplateData from "./module/documents/TemplateData.mjs";
 import ItemEp2e from "./module/documents/ItemEp2e.mjs";
 import MorphData from "./module/documents/MorphData.mjs";
 import SkillData from "./module/documents/SkillData.mjs";
