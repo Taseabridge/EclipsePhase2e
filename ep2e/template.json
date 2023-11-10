@@ -1,6 +1,6 @@
 {
     "Actor": {
-      "types": ["character"]
+      "types": ["character","npc"]
     },
   "Item": {
     "types": ["ego","gear","template","morph","skill","ware"],

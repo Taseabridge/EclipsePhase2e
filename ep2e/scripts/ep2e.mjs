@@ -8,6 +8,7 @@ import ItemEp2e from "./module/documents/ItemEp2e.mjs";
 import MorphData from "./module/documents/MorphData.mjs";
 import SkillData from "./module/documents/SkillData.mjs";
 import WareData from "./module/documents/WareData.mjs";
+import NpcData from "./module/documents/NpcData.mjs";
 
 var start_time = performance.now();
 const SYSTEM_NAME = "ep2e";
@@ -222,7 +223,8 @@ Hooks.once("init", () => {
     TRUtils.registerSettings();
 
     CONFIG.Actor.documentClass = ActorEp2e;
-    CONFIG.Actor.dataModels.character = CharacterData
+    CONFIG.Actor.dataModels.character = CharacterData;
+    CONFIG.Actor.dataModels.npc = NpcData;
 
     CONFIG.Item.documentClass = ItemEp2e;
     CONFIG.Item.dataModels.gear = GearData;
