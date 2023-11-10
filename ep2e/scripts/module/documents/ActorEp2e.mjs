@@ -14,6 +14,10 @@ export default class ActorEp2e extends Actor {
         actor.system.ego.current = actor.items.get(actor.system.ego.currentId);
 
         // prepare derived data
+        actor.system.initiative = Math.round((actor.system.ego.current?.system?.aptitudes.intuition + actor.system.ego.current?.system?.aptitudes.reflexes) / 5);
+        actor.system.durability = actor.system.morph?.current?.system.durability ?? 0;
+        actor.system.woundThreshold = Math.round((actor.system.durability ?? 0) / 5);
+
         // process the items
         // lots of stuf, this is arguably one of the most important places to work on, besides further vertical exploration in order to discover stuff we need.
 
