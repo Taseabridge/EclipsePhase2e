@@ -11,7 +11,7 @@ export default class ActorEp2e extends Actor {
         const actor = this;
 
         // put current ego into the ego property
-        actor.system.ego.current = actor.items.get(actor.system.ego.currentId);
+        actor.system.ego.ego = actor.items.get(actor.system.ego.currentId);
 
         // put cuerrent morph into the morph property
         actor.system.morph.current = actor.items.get(actor.system.morph.currentId);

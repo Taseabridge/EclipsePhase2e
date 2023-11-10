@@ -27,25 +27,12 @@ export default class ActorData extends foundry.abstract.DataModel {
         );
 
         const ego = {};
-
-        /**
-         * The Egos present or otherwise associated. The multiplicity mainly usefull for something like a server or vehicle.
-         */
-        ego.egos = new foundry.data.fields.ArrayField(
-            new foundry.data.fields.StringField({
-            })
-        );
-
         /**
          * The Ego currently controlling the Actor. Normally the one Ego like for a player character most of the time. Occassionally used for replacing that Ego, like when puppeteering.
          * 
          * ego.current will be the reference to the Item type ego with that id on this Actor's items EmbeddedCollection.
          */
-        ego.currentId = new foundry.data.fields.StringField({
-            required: true,
-            initial: ""
-        });
-
+        ego.currentId = new foundry.data.fields.StringField();
         actor.ego = new foundry.data.fields.SchemaField(ego);
 
         const morph = {};
