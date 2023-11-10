@@ -48,6 +48,16 @@ export default class ActorData extends foundry.abstract.DataModel {
 
         actor.ego = new foundry.data.fields.SchemaField(ego);
 
+        const morph = {};
+        morph.morphs = new foundry.data.fields.ArrayField(
+            new foundry.data.fields.StringField({
+            })
+        );
+        morph.currentId = new foundry.data.fields.StringField({
+        });
+        actor.morph = new foundry.data.fields.SchemaField(morph);
+
+
         return actor;
     }
 }
