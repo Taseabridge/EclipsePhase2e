@@ -3,7 +3,7 @@
       "types": ["character"]
     },
   "Item": {
-    "types": ["ego","gear","generationtemplate","morph","skill","ware"],
+    "types": ["ego","gear","template","morph","skill","ware"],
     "htmlFields": ["description"],
     "templates":{
       "skill":{
