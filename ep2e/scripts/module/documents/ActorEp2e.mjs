@@ -21,6 +21,10 @@ export default class ActorEp2e extends Actor {
         actor.system.durability = actor.system.morph?.current?.system.durability ?? 0;
         actor.system.woundThreshold = Math.round((actor.system.durability ?? 0) / 5);
 
+        // put skills into skills
+        actor.skills = actor.items.filter(i => i.type === "skill");
+        actor.skills.sort((a, b) => a.name.localeCompare(b.name));
+
         // process the items
         // lots of stuf, this is arguably one of the most important places to work on, besides further vertical exploration in order to discover stuff we need.
 
