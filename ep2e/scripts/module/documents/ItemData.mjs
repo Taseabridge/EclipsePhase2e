@@ -26,6 +26,11 @@ export default class ItemData extends foundry.abstract.DataModel {
         item.description = new foundry.data.fields.HTMLField();
 
         /**
+         * Notes primarily meant to be used by the GM for documentation, such as why an item with changes was granted and such.
+         */
+        item.notes = new foundry.data.fields.HTMLField();
+
+        /**
          * Seemingly we are building our own (not enforced) type system. So everything needs to be typed in order to have the logic be different for the differend kinds (types) of things, concepts, ...
          * 
          * @todo There should be verification based on a list of values acceptable (known). The validation methods from the API might be able to help with this. Where does the list go, no matter if we have to write the validation ourselves or not?
