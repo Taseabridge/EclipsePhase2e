@@ -27,7 +27,7 @@ export default class MorphData extends ItemData {
             new foundry.data.fields.ObjectField({
                 name: null,
                 cname: null, // see ItemData.cname
-                description: null, // especially "Know: (Choose One), Common Fields..."
+                description: null,
                 value: { base: null, full: null }
             })
         );
