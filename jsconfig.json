@@ -3,5 +3,5 @@
     "module": "commonjs",
     "target": "es6"
   },
-  "include": ["foundry/public/scripts/**/*","ep2e/**/*"]
+  "include": ["foundry/app/**/*","ep2e/**/*"]
 }
