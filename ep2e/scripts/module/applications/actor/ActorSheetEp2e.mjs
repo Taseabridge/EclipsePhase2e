@@ -1,5 +1,6 @@
 export default class ActorSheetEp2e extends ActorSheet {
 
+    /*
     static get defaultOptions() {
         return foundry.utils.mergeObject(super.defaultOptions, {
             classes: ["worldbuilding", "sheet", "actor"],
@@ -11,6 +12,7 @@ export default class ActorSheetEp2e extends ActorSheet {
             dragDrop: [{ dragSelector: ".item-list .item", dropSelector: null }]
         });
     }
+    */
 
     /** @override */
     get template() {
@@ -25,6 +27,12 @@ export default class ActorSheetEp2e extends ActorSheet {
     async getData(options) {
 
         const context = super.getData(options);
+        console.log({ message: `ActorSheetEp2e.getData()`, thIs: this, options: options });
+
+        context.actor = this.actor;
+        context.source = this.actor.toObject().system;
+        context.items = Array.from(this.actor.items);
+        context.itemContext = {};
 
         /*
         context.actor = this.actor;
@@ -42,11 +50,13 @@ export default class ActorSheetEp2e extends ActorSheet {
         // do ep2e stuff
 
 
+        console.log({ message: `ActorSheetEp2e.getData()`, thIs: this, options: options, context: context });
 
         return context;
     }
 
     activateListeners(html) {
+        console.log({ message: `ActorSheetEp2e.activateListeners()`, thIs: this, html: html });
         // Editable Only Listeners
         if (this.isEditable) {
             const inputs = html.find("input");
@@ -67,6 +77,7 @@ export default class ActorSheetEp2e extends ActorSheet {
       * @private
       */
     async _onItemDelete(event) {
+        console.log({ message: `ActorSheetEp2e._onItemDelete()`, thIs: this, event: event });
 
         event.preventDefault();
         //console.log({ message: `ActorSheetEp2e._onItemDelete`, event: event });
