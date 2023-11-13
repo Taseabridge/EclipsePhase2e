@@ -1,7 +1,7 @@
 /**
  * Eclipse Phase 2nd Edition base ActorData to be extended for specific types of Actor if needed.
  */
-export default class ActorData extends foundry.abstract.DataModel {
+export default class ActorData extends foundry.abstract.TypeDataModel {
     static defineSchema() {
 
         const actor = {};
