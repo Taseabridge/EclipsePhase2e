@@ -1,7 +1,7 @@
 /**
  * Simulates a complex habitat network with loops and multiple connections.
  */
-function updateHabitatNetwork(modules, connections, deltaTime = 0.1) {
+function updateHabitatNetwork(modules, connections, deltaTime = 0.1, steps = 100) {
     const gamma = 1.4;
     const R = 8.314;
     const T = 293.15;
@@ -68,8 +68,11 @@ let connections = [
 ];
 
 // Run simulation for 10 seconds
-for (let i = 0; i < 100; i++) {
-    modules = updateHabitatNetwork(modules, connections, 0.1);
+const step = 0.1;
+const steps = 100;
+
+for (let i = 0; i < steps; i++) {
+    modules = updateHabitatNetwork(modules, connections, step, steps);
 }
 
 console.log(modules);
